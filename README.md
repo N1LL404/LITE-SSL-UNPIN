@@ -124,6 +124,7 @@ su
 
 # Run frida-server
 /data/local/tmp/frida-server &
+frida -U -f com.facebook.katana -l frida_ssl_bypass.js --no-pause
 
 # Press Ctrl+C to return to shell, then exit
 exit
